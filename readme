@@ -1,64 +1,56 @@
-##  Fire and Smoke Detection using YOLOv12 ##
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
-  <img src="https://img.shields.io/badge/YOLO-v12-red.svg">
-  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green.svg">
-  <img src="https://img.shields.io/badge/Status-Completed-success.svg">
-</p>
-
-Real-time **Fire and Smoke Detection System** built with **YOLOv12**, **OpenCV**, and **Python**.
-
-The model detects:
-
-- 🔥 **Fire**
-- 🌫️ **Smoke**
-
-and automatically draws bounding boxes with confidence scores on images and videos.
+# 🔥 Fire and Smoke Detection using YOLOv12
 
 ---
 
-## 🎥 Demo
+## 📖 Overview
 
-<p align="center">
-  <img src="video_test/forest_fire_test.gif" width="800">
-</p>
+This project presents a **Real-Time Fire and Smoke Detection System** developed using **YOLOv12**, **OpenCV**, and **Python**.
+
+The model is capable of detecting:
+
+* 🔥 Fire
+* 🌫️ Smoke
+
+and automatically draws bounding boxes with confidence scores on images and videos.
+
+This system can be used for:
+
+* Forest fire monitoring
+* CCTV surveillance
+* Industrial safety
+* Smart city applications
+* Early warning systems
 
 ---
 
 ## ✨ Features
 
-✔️ Real-time fire and smoke detection
-
-✔️ Video and image inference
-
-✔️ YOLOv12 custom-trained model
-
-✔️ Bounding boxes with confidence scores
-
-✔️ OpenCV visualization
-
-✔️ Fast and lightweight architecture
-
-✔️ Easy to deploy
+* ✅ Real-time fire and smoke detection
+* ✅ Supports images and videos
+* ✅ YOLOv12-based object detection
+* ✅ Bounding boxes with confidence scores
+* ✅ OpenCV visualization
+* ✅ Lightweight and efficient architecture
+* ✅ GPU acceleration support
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-Fire-Smoke-Detection-YOLO12
+Fire-Smoke-Detection-YOLOv12
 │
-├── fire_smoke.py              # Real-time detection using OpenCV
-├── detect_video.py            # Video prediction script
-├── fire_smoke_detect.ipynb    # Model training notebook
-├── best.pt                    # Trained weights
+├── fire_smoke.py               # Real-time detection script
+├── detect_video.py             # Video prediction script
+├── fire_smoke_detect.ipynb     # Training notebook
+├── best.pt                     # Trained weights
 ├── requirements.txt
 ├── README.md
 │
 ├── video_test/
+│   ├── forest_fire_test.gif
 │   ├── fire-smoke-detect.mp4
-│   └── forest_fire_test.gif
+│   └── fire_test.mp4
 │
 └── runs/
     └── detect/
@@ -66,14 +58,29 @@ Fire-Smoke-Detection-YOLO12
 
 ---
 
+## 🧠 Model Information
+
+### Model Used
+
+**YOLOv12 Nano (YOLOv12n)**
+
+### Classes
+
+| ID | Class     |
+| -- | --------- |
+| 0  | 🔥 Fire   |
+| 1  | 🌫️ Smoke |
+
+---
+
 ## ⚙️ Installation
 
-### Clone Repository
+### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Fire-Smoke-Detection-YOLO12.git
+git clone https://github.com/YOUR_USERNAME/Fire-Smoke-Detection-YOLOv12.git
 
-cd Fire-Smoke-Detection-YOLO12
+cd Fire-Smoke-Detection-YOLOv12
 ```
 
 ### Install Dependencies
@@ -84,7 +91,24 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Run Real-Time Detection
+## 📦 Required Libraries
+
+* ultralytics
+* opencv-python
+* cvzone
+* numpy
+
+Install manually:
+
+```bash
+pip install ultralytics opencv-python cvzone numpy
+```
+
+---
+
+## 🚀 Running Real-Time Detection
+
+Execute:
 
 ```bash
 python fire_smoke.py
@@ -92,20 +116,23 @@ python fire_smoke.py
 
 This script:
 
-- Reads a video stream
-- Detects fire and smoke
-- Draws bounding boxes
-- Displays confidence scores in real time
+1. Loads the trained YOLOv12 model.
+2. Reads frames from the input video.
+3. Detects fire and smoke objects.
+4. Draws bounding boxes.
+5. Displays confidence scores.
 
 ---
 
-## 🎬 Run Video Prediction
+## 🎥 Video Prediction
+
+Run:
 
 ```bash
 python detect_video.py
 ```
 
-Predicted videos are saved automatically inside:
+Predicted outputs are automatically saved inside:
 
 ```text
 runs/detect/predict/
@@ -113,55 +140,52 @@ runs/detect/predict/
 
 ---
 
-## 🧠 Model
+## 📸 Sample Output
 
-Model used:
-
-- **YOLOv12 Nano (YOLOv12n)**
-
-### Classes
-
-| ID | Class |
-|----|--------|
-| 0 | 🔥 Fire |
-| 1 | 🌫️ Smoke |
+<p align="center">
+  <img src="video_test/forest_fire_test.gif" width="850">
+</p>
 
 ---
 
-## 📊 Results
+## 📊 Performance
 
-Example detections:
+### Detected Classes
 
-| Class | Confidence |
-|---------|------------|
-| 🔥 Fire | 79.7% |
-| 🌫️ Smoke | 42.4% |
+* 🔥 Fire
+* 🌫️ Smoke
 
-Inference speed:
+### Inference Speed
 
-- ⚡ ~200 ms/frame on CPU
-- 🚀 Faster on GPU
+| Device | Speed                        |
+| ------ | ---------------------------- |
+| CPU    | ~200 ms/frame                |
+| GPU    | Faster real-time performance |
 
 ---
 
 ## 🛠 Technologies Used
 
-<div align="center">
-
-Python • YOLOv12 • OpenCV • Ultralytics • cvzone • NumPy
-
-</div>
+| Technology  | Purpose                    |
+| ----------- | -------------------------- |
+| Python      | Programming Language       |
+| YOLOv12     | Object Detection           |
+| OpenCV      | Image and Video Processing |
+| Ultralytics | Training and Inference     |
+| cvzone      | Bounding Box Visualization |
+| NumPy       | Numerical Computation      |
 
 ---
 
 ## 🔮 Future Improvements
 
-- 📹 Webcam Detection
-- 🏢 CCTV Monitoring
-- 📱 Telegram Alerts
-- 📧 Email Notifications
-- 🌐 Web Application Deployment
-- 🤖 IoT Integration
+* 📹 Webcam Detection
+* 🏢 CCTV Monitoring
+* 📱 Telegram Alerts
+* 📧 Email Notifications
+* 🌐 Web Application Deployment
+* ☁️ Cloud Integration
+* 🤖 IoT-based Smart Fire Alarm System
 
 ---
 
@@ -169,14 +193,21 @@ Python • YOLOv12 • OpenCV • Ultralytics • cvzone • NumPy
 
 ### Anangsha Das
 
-Computer Vision • Machine Learning • Deep Learning
+Machine Learning • Deep Learning • Computer Vision
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: **https://github.com/YOUR_USERNAME**
 
 ---
 
-<div align="center">
+## ⭐ Support
 
-⭐ If you found this project useful, consider giving it a star!
+If you found this project useful, please consider giving it a **star ⭐**.
 
-</div>
+Your support is greatly appreciated.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
