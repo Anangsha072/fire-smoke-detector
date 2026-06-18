@@ -1,0 +1,162 @@
+# 🔥 Fire and Smoke Detection using YOLOv12
+
+Real-time Fire and Smoke Detection system built with **YOLOv12**, OpenCV and Python.
+
+The model detects:
+
+- 🔥 Fire
+- 🌫️ Smoke
+
+and draws bounding boxes with confidence scores on images and videos.
+
+---
+
+## 📷 Sample Output
+
+<p align="center">
+<img src="video_test/forest_fire_test.gif" width="700">
+</p>
+
+---
+
+## Features
+
+- Real-time detection
+- Supports images and videos
+- YOLOv12-based object detection
+- OpenCV visualization
+- Confidence score display
+- Custom-trained model
+
+---
+
+## Folder Structure
+
+```
+Fire-Smoke-Detection-YOLO12
+│
+├── fire_smoke.py
+├── detect_video.py
+├── fire_smoke_detect.ipynb
+├── best (2).pt
+├── requirements.txt
+├── README.md
+├── video_test
+│   ├── fire-smoke-detect.mp4
+│   └── forest_fire_test.gif
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Fire-Smoke-Detection-YOLO12.git
+
+cd Fire-Smoke-Detection-YOLO12
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Model
+
+The project uses a custom-trained **YOLOv12 Nano (YOLOv12n)** model.
+
+Classes:
+
+| Class ID | Class |
+|----------|-------|
+| 0 | Fire |
+| 1 | Smoke |
+
+---
+
+## Running Real-Time Detection
+
+```bash
+python fire_smoke.py
+```
+
+This script:
+
+- Loads the trained model
+- Reads a video
+- Detects fire and smoke
+- Draws bounding boxes
+- Displays confidence scores
+
+---
+
+## Running Video Prediction
+
+```bash
+python detect_video.py
+```
+
+Predictions are automatically saved inside:
+
+```
+runs/detect/predict/
+```
+
+---
+
+## Technologies Used
+
+- Python
+- YOLOv12
+- Ultralytics
+- OpenCV
+- cvzone
+
+---
+
+## Dataset
+
+Custom Fire and Smoke Detection Dataset.
+
+Classes:
+
+- Fire
+- Smoke
+
+---
+
+## Results
+
+Example detections:
+
+- 🔥 Fire confidence: 79.7%
+- 🌫️ Smoke confidence: 42.4%
+
+Inference speed:
+
+- ~200 ms/frame on CPU
+- Faster on GPU
+
+---
+
+## Future Improvements
+
+- Webcam detection
+- Live CCTV monitoring
+- Telegram alerts
+- Email notifications
+- Web application deployment
+- IoT integration
+
+---
+
+## Author
+
+**Anangsha Das**
+
+GitHub: https://github.com/YOUR_USERNAME
