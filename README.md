@@ -1,4 +1,4 @@
-# 🔥 Fire and Smoke Detection using YOLOv12
+#  Fire and Smoke Detection using YOLOv12
 
 ## Project Overview
 
@@ -38,8 +38,8 @@ The model is trained on a custom dataset containing two classes:
 
 | Class ID | Class Name |
 | -------- | ---------- |
-| 0        | 🔥 Fire    |
-| 1        | 🌫️ Smoke  |
+| 0        |  Fire    |
+| 1        |  Smoke  |
 
 ---
 
@@ -84,7 +84,7 @@ Fire-Smoke-Detection-YOLOv12
 The following GIF demonstrates the performance of the trained YOLOv12 model on fire and smoke videos.
 
 <p align="center">
-  <img src="video_test/forest_fire_test.gif" width="850">
+  <img src="video_test/smoke-fire-test" width="850">
 </p>
 
 The model successfully detects:
@@ -100,8 +100,8 @@ and displays confidence scores for each detection.
 
 ### Detection Classes
 
-* 🔥 Fire
-* 🌫️ Smoke
+*  Fire
+*  Smoke
 
 ### Inference Speed
 
@@ -130,9 +130,9 @@ and displays confidence scores for each detection.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Fire-Smoke-Detection-YOLOv12.git
+git clone https://github.com/Anangsha072/fire-smoke-detector.git
 
-cd Fire-Smoke-Detection-YOLOv12
+cd fire-smoke-detector
 ```
 
 Install dependencies:
@@ -192,7 +192,7 @@ Machine Learning • Deep Learning • Computer Vision
 GitHub:
 
 ```
-https://github.com/YOUR_USERNAME
+https://github.com/Anangsha072
 ```
 
 ---
