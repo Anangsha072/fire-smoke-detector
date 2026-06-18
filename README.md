@@ -83,15 +83,14 @@ Fire-Smoke-Detection-YOLOv12
 
 The following GIF demonstrates the performance of the trained YOLOv12 model on fire and smoke videos.
 
-![Uploading fire_smoke_detection.gif…]()
-
-
-
+<p align="center">
+  <img src="video_test/fire_smoke_detection.gif" width="850">
+</p>
 
 The model successfully detects:
 
-* 🔥 Fire regions
-* 🌫️ Smoke regions
+*  Fire regions
+*  Smoke regions
 
 and displays confidence scores for each detection.
 
@@ -167,20 +166,20 @@ python detect_video.py
 The output video is automatically saved inside:
 
 ```
-runs/detect/predict/
+runs/detect/predict3/
 ```
 
 ---
 
 # Future Improvements
 
-* 📹 Webcam-based detection
-* 🏢 CCTV surveillance integration
-* 📱 Telegram alerts
-* 📧 Email notifications
-* 🌐 Web application deployment
-* ☁️ Cloud-based monitoring
-* 🤖 IoT-enabled smart fire alarm system
+*  Webcam-based detection
+*  CCTV surveillance integration
+*  Telegram alerts
+*  Email notifications
+*  Web application deployment
+*  Cloud-based monitoring
+*  IoT-enabled smart fire alarm system
 
 ---
 
@@ -204,8 +203,5 @@ This project is open-source and available under the **MIT License**.
 
 ---
 
-# Support
 
-If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
 
-Your support is greatly appreciated.
