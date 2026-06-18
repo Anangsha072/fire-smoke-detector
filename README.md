@@ -83,9 +83,10 @@ Fire-Smoke-Detection-YOLOv12
 
 The following GIF demonstrates the performance of the trained YOLOv12 model on fire and smoke videos.
 
-<p align="center">
-  <img src="video_test/smoke-fire-test" width="850">
-</p>
+![Uploading fire_smoke_detection.gif…]()
+
+
+
 
 The model successfully detects:
 
